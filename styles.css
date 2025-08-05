@@ -81,6 +81,24 @@ header h2 {
     color: var(--light-color);
 }
 
+/* Hide header text on mobile */
+@media (max-width: 768px) {
+    header h1,
+    header h2 {
+        display: none;
+    }
+    
+    /* Adjust header padding when text is hidden */
+    header {
+        padding: 15px 0;
+    }
+    
+    /* Center the navigation when text is hidden */
+    nav ul {
+        justify-content: center;
+    }
+}
+
 /* Navigation - Updated for Horizontal Mobile */
 nav ul {
     display: flex;
@@ -614,3 +632,4 @@ footer a {
         width: 40px;
     }
 }
+
